@@ -23,10 +23,14 @@ export const scrapeArticles = () => dispatch => {
   axios.get("/api/articles/scrape").then(window.location.reload());
 };
 
-export const deleteArticles = () => {
-  return {
-    type: DELETE_ARTICLES
-  };
+// export const deleteArticles = () => {
+//   return {
+//     type: DELETE_ARTICLES
+//   };
+// };
+
+export const deleteArticles = () => dispatch => {
+  axios.get("/api/articles/delete").then(window.location.reload());
 };
 
 export const addArticles = article => {

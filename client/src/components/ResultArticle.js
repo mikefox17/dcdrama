@@ -9,7 +9,6 @@ import {
   saveArticle
 } from "../actions/articleActions";
 import PropTypes from "prop-types";
-import axios from "axios";
 
 class ResultArticle extends Component {
   componentDidMount() {
