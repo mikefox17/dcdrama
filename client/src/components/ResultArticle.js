@@ -62,8 +62,8 @@ class ResultArticle extends Component {
                   </a>
                   {note}
                   <Button
-                    className="remove-btn float-right btn-sm"
-                    color="danger"
+                    className="btn float-right btn-sm"
+                    color="primary"
                     onClick={this.onSaveClick.bind(this)}
                   >
                     Save

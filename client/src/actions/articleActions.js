@@ -28,6 +28,9 @@ export const scrapeArticles = () => dispatch => {
 //     type: DELETE_ARTICLES
 //   };
 // };
+// export const saveArticles = () => dispatch => {
+//   axios.post("/api/articles/delete").then(window.location.reload());
+// };
 
 export const deleteArticles = () => dispatch => {
   axios.get("/api/articles/delete").then(window.location.reload());
@@ -45,11 +48,15 @@ export const setArticlesLoading = () => {
   };
 };
 
-export const saveArticle = id => dispatch => {
-  axios.post("/" + id).then(res =>
-    dispatch({
-      type: SAVE_ARTICLES,
-      payload: res.data
-    })
-  );
+// export const saveArticle = id => dispatch => {
+//   axios.post("/api/articles" + id).then(res =>
+//     dispatch({
+//       type: SAVE_ARTICLES,
+//       payload: res.data
+//     })
+//   );
+// };
+
+export const saveArticle = () => dispatch => {
+  axios.post("/api/articles/id:").then(window.location.reload());
 };
